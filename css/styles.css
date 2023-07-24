@@ -30,61 +30,98 @@ h1 {
     font-size: 7rem;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
-p{
+p {
     margin-top: 0;
 }
 
 @media screen and (min-width:1024px) {
 
-    body{
+    body {
         font-size: 1.8rem;
     }
 
-    h1{
+    h1 {
         font-size: 8rem;
     }
 
-    h2{
+    h2 {
         font-size: 4rem;
     }
 
-    h3{
+    h3 {
         font-size: 2.4rem;
     }
 }
 
 /* Links */
-a{
-  text-decoration: none;  
+a {
+    text-decoration: none;
 }
 
-.link-arrow{
+.link-arrow {
     color: var(--accent-color);
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.link-arrow::after{
+.link-arrow::after {
     content: "-->";
     margin-left: 5px;
     transition: margin 0.15s;
 }
 
-.link-arrow:hover::after{
+.link-arrow:hover::after {
     margin-left: 10px;
 }
 
-@media screen  and (min-width: 1024px) {
-    .link-arrow{
+@media screen and (min-width: 1024px) {
+    .link-arrow {
         font-size: 1.5rem;
+    }
+}
+
+/* Badges */
+
+/* the badge block or component */
+.badge {
+    border-radius: 20px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    /* forbid the text collpase in small space*/
+    white-space: nowrap;
+}
+
+/* a badge modifier */
+.badge--primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.badge--secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.badge--small{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+
+    .badge--small{
+        font-size: 1.2rem;
     }
 }
