@@ -267,13 +267,13 @@ a {
     display: flex;
 }
 
-.input-group .input{
-    border: none; 
+.input-group .input {
+    border: none;
     flex-grow: 1;
-    padding:  1.5rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
-.input-group .btn{
+.input-group .btn {
     margin: 4px;
 }
 
@@ -281,4 +281,26 @@ a {
     .input {
         font-size: 1.5rem;
     }
+}
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--primary-color);
+    color: white;
+}
+
+.card--secondary .card__header {
+    background: var(--secondary-color);
+    color: white;
 }
